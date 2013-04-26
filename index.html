@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en" class="ie ie9"> <!--<![endif]--><head>
+        <meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+        <meta name="description" content=""/>
+        <meta name="keywords" content=""/>
+
+        <!-- Mobile Specific Metas
+        +++++++++++++++++++++++++++ -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <title>Page Title</title>
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css">    
+        <link rel="stylesheet" type="text/css" href="css/theme.css">
+		<link rel="stylesheet" type="text/css" href="css/mediatheme.css">
+        <link rel="stylesheet" type="text/css" href="css/fonts.css">
+		<link rel="stylesheet" type="text/css" href="css/mediatheme.css">
+    <link rel="stylesheet" type="text/css" href="css/theme_settings.css" id="theme_color">
+        
+        <!--[if IE 8 ]><script>
+            var e = ("article,aside,figcaption,figure,footer,header,hgroup,nav,section,time").split(',');
+            for (var i = 0; i < e.length; i++) {
+                document.createElement(e[i]);
+            }		
+        </script><![endif]-->
+         
+   <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+        <script type="text/javascript" src="js/jquery.onebyone.min.js" ></script>
+        
+        <link rel="stylesheet" type="text/css" href="css/resets.css" media="screen" />
+
+
+<!--[if !IE]><!-->
+<link rel="stylesheet" type="text/css" href="css/sbtooltip.css" media="screen" />
+<script type='text/javascript' src='js/jquery.sbtooltip.js'></script>
+<script type="text/javascript"> 
+$(document).ready(function(){
+	
+	$( "#tabs" ).tabs().addClass("ui-tabs-vertical ui-helper-clearfix");
+$( "#tabs li" ).removeClass( "ui-corner-top" ).addClass("ui-corner-left");
+
+	$("a.sbtooltip").sbTooltip();
+	
+
+	if ($.fn.cssOriginal!=undefined)
+		$.fn.css = $.fn.cssOriginal;                                                
+	var api = $('.banner').revolution({
+		delay:8000,
+		startheight:490,
+		startwidth:1170,
+		hideThumbs:200,
+		thumbWidth:100,	// Thumb With and Height and Amount (only if navigation Tyope set to thumb !)
+		thumbHeight:50,
+		thumbAmount:5,
+		navigationType:"none",	//bullet, thumb, none, both (No Thumbs In FullWidth Version !)
+		navigationArrows:"verticalcentered",	//nexttobullets, verticalcentered, none
+		navigationStyle:"round",	//round,square,navbar
+		touchenabled:"on",	// Enable Swipe Function : on/off
+		onHoverStop:"off",	// Stop Banner Timet at Hover on Slide on/off
+		navOffsetHorizontal:0,
+		navOffsetVertical:20,
+		stopAtSlide:-1,	// Stop Timer if Slide "x" has been Reached. If stopAfterLoops set to 0, then it stops already in the first Loop at slide X which defined. -1 means do not stop at any slide. stopAfterLoops has no sinn in this case.
+		stopAfterLoops:-1,	// Stop Timer if All slides has been played "x" times. IT will stop at THe slide which is defined via stopAtSlide:x, if set to -1 slide never stop automatic
+		hideCaptionAtLimit:0,	// It Defines if a caption should be shown under a Screen Resolution ( Basod on The Width of Browser)
+		hideAllCaptionAtLilmit:0,	// Hide all The Captions if Width of Browser is less then this value
+		hideSliderAtLimit:0,	// Hide the whole slider, and stop also functions if Width of Browser is less than this value
+		shadow:0,	//0 = no Shadow, 1,2,3 = 3 Different Art of Shadows  (No Shadow in Fullwidth Version !)
+		fullWidth:"off"	// Turns On or Off the Fullwidth Image Centering in FullWidth Modus
+	});
+
+	
+}); 
+//alert(navigator.userAgent.toString().toLowerCase());
+</script>
+     
+    </head>
+    <body>
+        <!-- H E A D E R -->
+       <!-- <hr class="headline">-->
+        <div class="main_wrapper">
+            <header>
+                <div class="header_wrapper container">
+                    <a href="index.html" class="logo"><img src="img/logo.png" alt=""  width="" height="54" class="logo_def"></a>
+                    <div class="header_tools">
+                        <div class="header_search_block header_tool_block">
+                        
+                            <!--<a href="javascript:void(0)" class="header_search_toggler header_tool_toggler"></a>-->
+                            
+                            <div class="header_search_content">
+                                <form name="search_form" method="get" action="#" class="search_form">
+                                    <input type="text" name="search_field" value="Search the Site" title="Search the Site" class="field_search">
+                                    <input type="image" class="floatLft" src="img/pictures/searchButImage.jpg" alt="" />
+                                </form>
+                               </div>
+                            <div>
+                            </div>
+                            
+                        </div><!-- .header_cart_block --> 
+                        <p class="header_txt">+44 (0)21 333 4444</p>
+                   
+                    </div>
+                    <div class="clear"></div>
+                    <nav>
+                        <ul class="menu">
+                            <li class="current-menu-parent"><a href="javascript:void(0)">Home</a>
+                                <ul class="sub-menu">
+                                    <li class="current-menu-item"><a href="index.html">Layout1</a></li>
+                                    <li><a href="home2.html">Layout2</a></li>
+                                    <li><a href="home3.html">Layout3</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="javascript:void(0)">Translation</a>
+                                <ul class="sub-menu">
+                                    <li><a href="about.html">About</a></li>
+                                    <li><a href="404.html">404 Page</a></li>
+                                    <li><a href="sitemap.html">Sitemap</a></li>
+                                </ul>                        
+                            </li>
+                            <li><a href="javascript:void(0)">Localisation</a>
+                                <ul class="sub-menu">
+                                    <li><a href="typography.html">Typography</a></li>
+                                    <li><a href="shortcodes.html">Shortcodes</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="javascript:void(0)">Other Services</a>
+                                <ul class="sub-menu">
+                                    <li><a href="portfolio1.html">1 Column</a></li>
+                                    <li><a href="portfolio2.html">2 Columns</a></li>
+                                    <li><a href="portfolio3.html">3 Columns</a></li>
+                                	<li><a href="portfolio4.html">4 Columns</a></li>                                    
+                                    <li><a href="portfolio_post.html">Portfolio post</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="javascript:void(0)">About Us</a>
+                                <ul class="sub-menu">
+                                    <li><a href="blog_full.html">Full width</a></li>
+                                    <li><a href="blogpost_full.html">Blog post</a></li>
+                                    <li><a href="javascript:void(0)">With sidebar</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="blog_left.html">Left sidebar</a></li>
+                                            <li><a href="blog_right.html">Right sidebar</a></li>
+                                            <li><a href="blogpost_sidebar.html">Blog post</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="shop.html">Contact</a></li>                
+                            <li><a href="javascript:void(0)">Case Studies</a>
+                                <ul class="sub-menu">
+                                    <li><a href="contact_full.html">Full width</a></li>
+                                    <li><a href="contact_sidebar.html">With sidebar</a></li>
+                                </ul>
+                            </li>                
+                        </ul>
+                        <!-- .menu -->
+                    </nav>                
+                    <div class="clear"></div>
+                </div><!-- .header_wrapper -->
+            </header>
+            
+            <!-- C O N T E N T -->
+            <div class="content_wrapper">
+                <div class="container">
+                    <div class="content_block no-sidebar row">
+                        <div class="fl-container span12">
+                            <div class="row">
+                                <div class="posts-block span12">
+                                    <div class="contentarea">
+
+                                        <div class="row-fluid">                                
+                                            <div class="span12 module_cont module_revolution_slider">
+												<script type="text/javascript" src="js/jquery.themepunch.plugins.min.js"></script>
+                                                <script type="text/javascript" src="js/jquery.themepunch.revolution.min.js"></script>
+                                                <link rel="stylesheet" type="text/css" href="css/rs-settings.css">
+                                                <div class="bannercontainer" >
+     
+                                                
+                                                	<div id="social-float">
+                                                    	<ul>
+                                                        	<li id="facebook"><a href="">1</a></li>
+                                                        	<li id="twitter"><a href="">2</a></li>
+                                                        	<li id="linkedin"><a href="">3</a></li>
+                                                        	<li id="mail"><a href="">5</a></li>
+                                                        	<li id="livechat"><a href="">5</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="banner" >
+                                                        <ul>
+                                                            <!-- SLIDE ONE -->
+                                                            <li data-transition="slideleft" data-slotamount="1" data-masterspeed="300">
+	                                                            <img src="img/slider/slide_transparent.jpg" alt="">
+                                                                <!-- CAPTIONS OF THE FIRST SLIDE -->   
+                                                                <div class="caption sfb stb"
+                                                                     data-x="170"
+                                                                     data-y="70"
+                                                                     data-speed="600"
+                                                                     data-start="1100"><img src="img/slider/ls1_img1.png" alt="Image 1"></div>
+                                        
+                                                                <div class="caption lfb ltb"
+                                                                     data-x="70"
+                                                                     data-y="25"
+                                                                     data-speed="600"
+                                                                     data-start="1200"><img src="img/slider/ls1_img2.png" alt="Image 2" ></div>
+                                        
+                                                                <div class="caption sft stt"
+                                                                     data-x="400"
+                                                                     data-y="60"
+                                                                     data-speed="600"
+                                                                     data-start="1300"><img src="img/slider/ls1_img3.png" alt="Image 3" ></div>
+                                        
+                                                                <div class="caption lfr ltr"
+                                                                     data-x="400"
+                                                                     data-y="110"
+                                                                     data-speed="300"
+                                                                     data-start="1400"><img src="img/slider/ls1_img4.png" alt="Image 4"></div>
+                                        
+                                                                <div class="caption lfr ltr"
+                                                                     data-x="400"
+                                                                     data-y="150"
+                                                                     data-speed="300"
+                                                                     data-start="1500"><img src="img/slider/ls1_img5.png" alt="Image 5"></div>
+                                                                                
+                                                                <div class="caption lfl ltl"
+                                                                     data-x="0"
+                                                                     data-y="346"
+                                                                     data-speed="300"
+                                                                     data-start="1700"><a href="#"><img src="img/slider/ls1_img7.png" alt="Image 7" ></a></div>    
+                                                            </li>
+                                        
+                                                            <!-- SLIDE TWO -->
+                                                            <li data-transition="slideleft" data-slotamount="1" data-masterspeed="300">
+	                                                            <img src="img/slider/slide_transparent_2.jpg" alt="">
+                                                                <!-- CAPTIONS OF THE FIRST SLIDE -->   
+                                                                <div class="caption sfb stb"
+                                                                     data-x="270"
+                                                                     data-y="170"
+                                                                     data-speed="600"
+                                                                     data-start="1100"><img src="img/slider/ls1_img1.png" alt="Image 1"></div>
+                                        
+                                                                <div class="caption lfb ltb"
+                                                                     data-x="70"
+                                                                     data-y="25"
+                                                                     data-speed="600"
+                                                                     data-start="1200"><img src="img/slider/ls1_img2.png" alt="Image 2" ></div>
+                                        
+                                                                <div class="caption sft stt"
+                                                                     data-x="400"
+                                                                     data-y="60"
+                                                                     data-speed="600"
+                                                                     data-start="1300"><img src="img/slider/ls1_img3.png" alt="Image 3" ></div>
+                                        
+                                                                <div class="caption lfr ltr"
+                                                                     data-x="400"
+                                                                     data-y="110"
+                                                                     data-speed="300"
+                                                                     data-start="1400"><img src="img/slider/ls1_img4.png" alt="Image 4" ></div>
+                                        
+                                                                <div class="caption lfr ltr"
+                                                                     data-x="400"
+                                                                     data-y="150"
+                                                                     data-speed="300"
+                                                                     data-start="1500"><img src="img/slider/ls1_img5.png" alt="Image 5"></div>
+                                        
+                                                                <div class="caption sfb stb"
+                                                                     data-x="648"
+                                                                     data-y="360"
+                                                                     data-speed="300"
+                                                                     data-start="1600"><img src="img/slider/ls1_img6.png" alt="Image 6"></div>
+                                        
+                                                                <div class="caption lfl ltl"
+                                                                     data-x="0"
+                                                                     data-y="346"
+                                                                     data-speed="300"
+                                                                     data-start="1700"><a href="#"><img src="img/slider/ls1_img7.png" alt="Image 7"></a></div> 			
+                                                            </li>    
+                                                            <!-- SLIDE THREE -->
+                                                            <li data-transition="slideleft" data-slotamount="1" data-masterspeed="300">
+	                                                            <img src="img/slider/slide_transparent.jpg" alt="">
+                                                                <!-- CAPTIONS OF THE FIRST SLIDE -->   
+                                                                <div class="caption sfb stb"
+                                                                     data-x="270"
+                                                                     data-y="170"
+                                                                     data-speed="600"
+                                                                     data-start="1100"><img src="img/slider/ls1_img1.png" alt="Image 1"></div>
+                                        
+                                                                <div class="caption lfb ltb"
+                                                                     data-x="70"
+                                                                     data-y="25"
+                                                                     data-speed="600"
+                                                                     data-start="1200"><img src="img/slider/ls1_img2.png" alt="Image 2" ></div>
+                                        
+                                                                <div class="caption sft stt"
+                                                                     data-x="400"
+                                                                     data-y="60"
+                                                                     data-speed="600"
+                                                                     data-start="1300"><img src="img/slider/ls1_img3.png" alt="Image 3" ></div>
+                                        
+                                                                <div class="caption lfr ltr"
+                                                                     data-x="400"
+                                                                     data-y="110"
+                                                                     data-speed="300"
+                                                                     data-start="1400"><img src="img/slider/ls1_img4.png" alt="Image 4"></div>
+                                        
+                                                                <div class="caption lfr ltr"
+                                                                     data-x="400"
+                                                                     data-y="150"
+                                                                     data-speed="300"
+                                                                     data-start="1500"><img src="img/slider/ls1_img5.png" alt="Image 5"></div>
+                                        
+                                                                <div class="caption sfb stb"
+                                                                     data-x="648"
+                                                                     data-y="360"
+                                                                     data-speed="300"
+                                                                     data-start="1600"><img src="img/slider/ls1_img6.png" alt="Image 6" ></div>
+                                        
+                                                                <div class="caption lfl ltl"
+                                                                     data-x="0"
+                                                                     data-y="346"
+                                                                     data-speed="300"
+                                                                     data-start="1700"><a href="#"><img src="img/slider/ls1_img7.png" alt="Image 7" ></a></div> 
+															</li>
+                                                        </ul>
+                                                        <div class="tp-bannertimer tp-bottom"></div>
+                                                    </div>
+                                                </div>
+												
+                                                
+                                            </div><!--.module_cont -->
+                                            <div class="clear"><!-- ClearFIX --></div>                                                                    
+                                        </div><!-- .row-fluid -->
+                                        
+                                        
+                                        <div>
+            <div class="container">
+                <div class="content_block left-sidebar row">
+                    <div class="fl-container span12">
+                        <div class="row" id="tabs">
+                            <div class="posts-block span9">
+                                <div class="contentarea">
+
+                                    <div class="row-fluid">
+                                      <div class="span12 module_cont module_text_area" id="tabs-1">
+                                          <h1>Quality</h1>
+                                        <h5 style="padding-top:20px;">Lorem ipsum dorem et velor du dorem ipsum dorem et velor du dorem ipsum dorem et velor du dorem ipsum dorem et velor du dorem ipsum dorem et velor du dorem ipsum dorem et velor du dorem ipsum dorem et velor du dorem ipsum dorem et velor du dorem ipsum dorem et velor du dorem ipsum dorem et velor du dorem ipsum dorem et velor du dorem ipsum dorem et velor du dorem ipsum dorem et velor du dorem ipsum dorem et velor du dorem ipsum dorem et velor du dorem ipsum.</h5>
+                                        </div>		
+                                        
+                                        <div class="span12 module_cont module_text_area" id="tabs-2">
+                                          <h1>Expertise</h1>
+                                        <h5 style="padding-top:20px;">Lorem ipsum dorem et velor du dorem ipsum dorem et velor du dorem ipsum dorem et velor du dorem ipsum dorem et velor du dorem ipsum dorem et velor du dorem ipsum dorem et velor du dorem ipsum dorem et velor du dorem ipsum dorem et velor du dorem ipsum dorem et velor du dorem ipsum dorem et velor du dorem ipsum dorem et velor du dorem ipsum dorem et velor du dorem ipsum dorem et velor du dorem ipsum dorem et velor du dorem ipsum dorem et velor du dorem ipsum.</h5>
+                                        </div>		
+                                        
+                                        <div class="span12 module_cont module_text_area" id="tabs-3">
+                                          <h1>Service</h1>
+                                        <h5 style="padding-top:20px;">Lorem ipsum dorem et velor du dorem ipsum dorem et velor du dorem ipsum dorem et velor du dorem ipsum dorem et velor du dorem ipsum dorem et velor du dorem ipsum dorem et velor du dorem ipsum dorem et velor du dorem ipsum dorem et velor du dorem ipsum dorem et velor du dorem ipsum dorem et velor du dorem ipsum dorem et velor du dorem ipsum dorem et velor du dorem ipsum dorem et velor du dorem ipsum dorem et velor du dorem ipsum dorem et velor du dorem ipsum.</h5>
+                                        </div>
+                                        
+                                        <div class="span12 module_cont module_text_area" id="tabs-4">
+                                          <h1>Value</h1>
+                                        <h5 style="padding-top:20px;">Lorem ipsum dorem et velor du dorem ipsum dorem et velor du dorem ipsum dorem et velor du dorem ipsum dorem et velor du dorem ipsum dorem et velor du dorem ipsum dorem et velor du dorem ipsum dorem et velor du dorem ipsum dorem et velor du dorem ipsum dorem et velor du dorem ipsum dorem et velor du dorem ipsum dorem et velor du dorem ipsum dorem et velor du dorem ipsum dorem et velor du dorem ipsum dorem et velor du dorem ipsum dorem et velor du dorem ipsum.</h5>
+                                        </div>
+                                        	
+                                          <div class="span12 module_cont module_text_area" id="tabs-5">
+                                          <h1>Support</h1>
+                                        <h5 style="padding-top:20px;">Lorem ipsum dorem et velor du dorem ipsum dorem et velor du dorem ipsum dorem et velor du dorem ipsum dorem et velor du dorem ipsum dorem et velor du dorem ipsum dorem et velor du dorem ipsum dorem et velor du dorem ipsum dorem et velor du dorem ipsum dorem et velor du dorem ipsum dorem et velor du dorem ipsum dorem et velor du dorem ipsum dorem et velor du dorem ipsum dorem et velor du dorem ipsum dorem et velor du dorem ipsum dorem et velor du dorem ipsum.</h5>
+                                        </div>  
+                                            
+                                           <div class="span12 module_cont module_text_area" id="tabs-6">
+                                          <h1>Creativity</h1>
+                                        <h5 style="padding-top:20px;">Lorem ipsum dorem et velor du dorem ipsum dorem et velor du dorem ipsum dorem et velor du dorem ipsum dorem et velor du dorem ipsum dorem et velor du dorem ipsum dorem et velor du dorem ipsum dorem et velor du dorem ipsum dorem et velor du dorem ipsum dorem et velor du dorem ipsum dorem et velor du dorem ipsum dorem et velor du dorem ipsum dorem et velor du dorem ipsum dorem et velor du dorem ipsum dorem et velor du dorem ipsum dorem et velor du dorem ipsum.</h5>
+                                        </div>   
+                                            
+                                    </div>
+<!--                                     .row-fluid -->
+
+                                <div class="row-fluid"></div><!-- .row-fluid -->                                
+                                </div><!-- .contentarea -->
+                            </div>
+                            <div class="left-sidebar-block span3">
+                                <aside class="sidebar">
+                                    <div class="sidepanel widget_nav_menu">
+                                        <ul class="menu">
+<li class="menu-item"><a href="#tabs-1" class="upOfActive">Quality</a></li>
+<li class="menu-item"><a href="#tabs-2" class="downOfActive ui-tabs-active">Expertise</a></li>
+<li class="menu-item"><a href="#tabs-3">Service</a></li>
+<li class="menu-item"><a href="#tabs-4">Value</a></li>
+<li class="menu-item"><a href="#tabs-5">Support</a></li>
+<li class="menu-item"><a href="#tabs-6">Creativity</a></li>
+</ul>
+                                    </div>
+                                    </aside>
+                                    
+        </div>         
+        
+         <div id="tabs">
+
+
+</div>                                                        
+</div><!-- .row-fluid -->
+
+<div class="row-fluid">
+                                        <div class="span12 module_cont module_text_area margin0">
+                                            <hr class="dark">
+                                        </div><!-- .module_cont -->
+                                    </div><!-- .row-fluid -->
+
+                                    <div class="row-fluid">
+                                        <div class="span12 module_cont module_partners">
+                                            <div class="module_content sponsors_works carouselslider items6" data-count="8">
+                                                <ul>
+                                                    <li>
+                                                        <div class="item">
+                                                           <a href="#" class="sbtooltip" title="Image One"><img src="img/pictures/logo-one.jpg" width="95" height="55" alt="img" />
+</a>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="item">
+                                                            <a class="sbtooltip" title="Image Two" href="#" target="_blank"><img src="img/pictures/logo-two.jpg" width="95" height="55" alt=""></a>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="item">
+                                                            <a class="sbtooltip" title="Image Three" href="#" target="_blank"><img src="img/pictures/logo-three.jpg" width="95" height="55" alt=""></a>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="item">
+                                                            <a class="sbtooltip" title="Image Four" href="#" target="_blank"><img src="img/pictures/logo-four.jpg" width="95" height="55" alt=""></a>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="item">
+                                                            <a class="sbtooltip" title="Image Five" href="#" target="_blank"><img src="img/pictures/logo-five.jpg" width="95" height="55" alt=""></a>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="item">
+                                                            <a class="sbtooltip" title="Image Six" href="#" target="_blank"><img src="img/pictures/logo-six.jpg" width="95" height="55" alt=""></a>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="item">
+                                                            <a class="sbtooltip" title="Image Seven" href="#"><img src="img/pictures/logo-seven.jpg" width="95" height="55" alt=""></a>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="item">
+                                                            <a class="sbtooltip" title="Image Eight" href="#" target="_blank"><img src="img/pictures/logo-eight.jpg" width="95" height="55" alt=""></a>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="item">
+                                                            <a class="sbtooltip" title="Image Nine" href="#" target="_blank"><img src="img/pictures/logo-nine.jpg" width="95" height="55" alt=""></a>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="item">
+                                                            <a class="sbtooltip" title="Image Ten" href="#" target="_blank"><img src="img/pictures/logo-ten.jpg" width="95" height="55" alt=""></a>
+                                                        </div>
+                                                        </li></ul>
+                                       
+                                    
+                </div><!-- .container -->
+            </div><!-- .content_wrapper -->
+        </div><!-- .main_wrapper -->
+        
+                                    <div class="row-fluid">
+                                        <div class="span12">
+                                            <hr class="dark">
+                                        </div><!-- .module_cont -->
+                                        
+                                    </div><!-- .row-fluid -->
+                                    <div class="row-fluid">
+	                                   </div><!-- .row-fluid -->
+                                    <div class="row-fluid">
+                                            <div class="shortcode_messagebox">
+                                               
+                                               <div class="footer-col-wrapper">
+                                               <div class="footer-col1">
+                                               <p>SERVICES</p>
+												<ul>
+                                                <li><a href="#">Translation</a></li>
+                                                <li><a href="#">Localisation</a></li>
+
+                                                
+                                                </ul>
+                                               </div>
+                                               <div class="footer-col2">
+                                               <p>JOIN US</p>
+												<ul>
+                                                <li><a href="#">Our blog</a></li>
+                                                <li><a href="#">Facebook</a></li>
+                                                <li><a href="#">Twitter</a></li>
+ 
+                                                
+                                                </ul>
+                                               </div>
+                                               <div class="footer-col3">
+                                               <p>OUR COMPANY</p>
+												<ul>
+                                                <li><a href="#">Contact us</a></li>
+                                                <li><a href="#">About us</a></li>
+                                                <li><a href="#">Testimonials</a></li>
+ 
+                                                
+                                                </ul>
+                                               </div>
+                                               <div class="footer-col4">
+                                               <p>VISIT US</p>
+												<ul>
+                                                <li><a href="#">Company</a></li>
+                                                <li><a href="#">Address</a></li>
+                                                <li><a href="#">Address<br>Address<br>Address</a></li>
+ 
+                                                
+                                                </ul>
+                                               </div>
+                                               </div>
+                                               <div class="footer-legals-wrapper">
+                                               	<div class="footer-legals">
+                                                <p><img src="img/footer-logo.png" alt="" /></p>
+                                                <p>Copyright © 2013 <strong>Company</strong>. All rights reserved.</p> 
+<p>Registration number: 000000 Registered in the UK</p></div>
+													</div>
+                                               
+                                               
+                                        </div><!-- .module_cont -->
+                                        </div>
+                                    
+                  </div>            	
+            </div>
+        </div><!-- .pre_footer -->
+        <footer>
+            <div class="footer_wrapper container">
+                
+            </div>
+            <hr>
+        </footer>
+   <script language="javascript" src="js/jquery-ui.js"/></script>
+    <script type="text/javascript" src="js/theme.js"/></script>    
+    <div class="custom_bg_cont" style="background-color:#505050;"></div>
+    
+   
+</div>
+
+</body>
+</html>

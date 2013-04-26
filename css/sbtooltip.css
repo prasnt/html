@@ -1,0 +1,58 @@
+/*
+ * Speech-Bubble Tooltip by Jamy Golden
+ */
+ 
+a.sbtooltip:hover {
+	position: relative; /* Allows the tooltip to be absolutely positioned */
+	z-index: 999;
+}
+
+/* Speech Bubble */
+a.sbtooltip:before {
+/*	background:#999;*/ /*rgb(224,168,38);  For browsers that don't support gradients */
+	background: url(../img/pictures/txt-bubble.png) no-repeat top;
+	color: #fff;
+	content: attr(sbtooltip); /* This takes the content of the attribute named “sbtooltip” and displays it within this element*/
+	display: none; /* Hidden until hovered upon */
+
+/* Font, padding, top and right must change depending on the font size you are using on your web page */
+	font: 12px Helvetica, Arial,Georgia, sans-serif;
+	padding: 5px 0 0 0;
+	text-align:center;
+	position:absolute;
+	top:-2px;
+	right:-10px;
+	z-index:1;
+ 
+/* Border radii for different browsers */
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+
+/* Box shadows for different browsers */
+	/*-moz-box-shadow: 0px 0px 4px #999;
+	-webkit-box-shadow: 0px 0px 4px #999;
+	box-shadow: 0px 0px 4px #999;*/
+	height: 43px; /* Width and height could  be left out, but I prefer a less 'pointy' triangle */
+	width: 85px;
+}
+ 
+/* Triangle */
+a.sbtooltip:after {
+	/*border-width: 12px;
+	border-style: solid;*/
+	/*border-color: transparent transparent rgb(224,168,38) transparent;*/
+	content: ""; /* Forces this pseudo-element to appear on hover */
+	display: none;
+	height: 43px; /* Width and height could  be left out, but I prefer a less 'pointy' triangle */
+	width: 85px;
+	position:absolute;
+	top:-2px;
+	right:-10px;
+	z-index:1;
+}
+
+/* Display on hover */
+a.sbtooltip:hover:after, a.sbtooltip:hover:before {
+	display: block; /* The Speech-bubble tooltip and pointer will appear on hover */
+}
