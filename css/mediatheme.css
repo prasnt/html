@@ -3663,6 +3663,36 @@ margin-bottom: 0px;
 header .header_tools {
 margin-right: 170px;
 }
+header nav ul.menu {
+width: 568px;
+}
+header nav ul.menu > li{
+width:81px;
+}
+.widget_nav_menu ul li a{
+width:150px;
+}
+.ui-tabs-vertical .ui-tabs-nav {
+width: 100px;
+}
+.left-sidebar .left-sidebar-block {
+width: 100px;
+}
+.ui-tabs-vertical .ui-tabs-panel{
+	margin-top: 10px;
+padding-left: 10px;
+margin-bottom: 0px;
+	}
+	.ui-tabs-vertical {
+	width:100%;
+	}
+	h5{
+width: 269px;
+}
+
+.ui-tabs-vertical .ui-tabs-nav li{
+width:150px;
+}
 }
 
 @media (max-width: 480px) {
