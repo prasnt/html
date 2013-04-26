@@ -3681,7 +3681,7 @@ width: 100px;
 }
 .ui-tabs-vertical .ui-tabs-panel{
 	margin-top: 10px;
-padding-left: 10px;
+padding-left: 210px;
 margin-bottom: 0px;
 	}
 	.ui-tabs-vertical {
@@ -3690,9 +3690,14 @@ margin-bottom: 0px;
 	h5{
 width: 269px;
 }
-
 .ui-tabs-vertical .ui-tabs-nav li{
 width:150px;
+}
+p, td, div{
+/*font-size:13px;*/
+}
+.module_cont{
+width:600px;
 }
 }
 
