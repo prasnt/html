@@ -3908,8 +3908,105 @@ width:600px;
     padding-left: 10px;
   }
 }
+@media (max-width: 320px) {
+main_wrapper, .pre_footer {
+width: 300px;
+}
+header nav {
+display:none;
+}
+header .header_tools {
+display: inline-block;
+float:none;
+margin-left:115px;
+}
+.header_cart_content, .header_social_content, .header_search_content{
+width: 180px;
+}
+.header_search_block .header_search_content .field_search {
+width: 110px!important;
+}
+.floatLft {
+margin-left: 150px;
+}
+header .logo img {
+width: 100px;
+margin-top:0px;
+}
+/*.bannercontainer {
+display:none;
+}*/
+.banner{
+display:none;
+}
+ #social-float{display:inline-block;width:270px;height:48px;float:left; z-index:22;position:absolute;top:0;left:30px}
+											   #social-float ul {display:inline-block;float:left;margin:0;padding:0;}
+#social-float ul li{display:inline-block;float:left;width:45px;height:48px;/*position: relative !important;*/margin:0 0 0 0!important}
+#social-float ul li a{display:inline-block;float:left;width:45px;height:48px;text-indent:-9999px; z-index:1;}
 
 
+#social-float ul li#facebook a{background:url(../img/facebook-icon.png) top left no-repeat; }
+#social-float ul li#twitter a{background:url(../img/twitter-icon.png) top left no-repeat;}
+#social-float ul li#linkedin a{background:url(../img/linkedin-icon.png) top left no-repeat; }
+#social-float ul li#mail a{background:url(../img/mail-icon.png) top left no-repeat; }
+#social-float ul li#livechat a{background:url(../img/live-chart-icon.png) top left no-repeat;}
+.bannercontainer{
+height:0px;
+}
+.span9 {
+width: 300px;
+font:normal 12px/15px Arial;
+color:#000;
+}
+h1, h1 span, h1 a {
+font-size: 14px;
+line-height: 16px;
+}
+h5, h5 span, h5 a {
+font-size: 11px;
+}
+.footer-legals img{
+display:none;
+}
+.footer-col-wrapper p,.footer-col-wrapper div{ 
+	font-size: 11px; 
+	color:#ec008c; 
+	line-height: 14px;
+	text-align: center;
+	color:#FFF;
+}
+.footer-col1{
+width:50%;
+float:left;
 
+}
+.footer-col2{
+width:50%;
+float:left;
+}
+.footer-col3{
+width:50%;
+float:left;
+}
+.footer-col4{
+width:50%;
+float:left;
+}
+.footer-col-wrapper p{
+padding-top:10px;
+padding-left:10px;
 
+}
+.ui-tabs-vertical .ui-tabs-nav li{
+width:100px;
+}
+.footer-legals{
+margin-top:20px;
+}
+.footer-legals p{
+font-size:11px;
+line-height:0;
+padding:10px;
+}
 
+}
