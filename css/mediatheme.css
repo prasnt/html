@@ -3959,7 +3959,137 @@ width: 400px;
     padding-left: 10px;
   }
 }
-@media (max-width: 320px) {
+
+
+@media (max-width:568px) {
+
+header nav ul.menu > li {
+width: 78px;
+}
+.menu {
+height: 47px;
+}
+.footer-legals-wrapper {
+width: 27%;
+margin-left: -56px;
+}
+header .header_tools {
+display: inline-block;
+float: left;
+margin-left: 314px;
+}
+}
+
+@media only screen and (max-width:480px) {
+
+.container {
+width: auto;
+}
+
+.main_wrapper, .pre_footer {
+width: 439px!important;
+}
+
+header .logo img {
+width: 84px;
+}
+header .header_tools {
+display: inline-block;
+float: left;
+margin-left: 114px;
+}
+.strike_txt_sub {
+width: 368px;
+padding-left:-50px;
+}
+.right_box {
+width: 399px;
+}
+.footer-legals img{
+display:none;
+}
+.footer-col-wrapper p,.footer-col-wrapper div{ 
+	font-size: 11px; 
+	color:#ec008c; 
+	line-height: 14px;
+	text-align: center;
+	color:#FFF;
+	width: 25%;
+}
+.footer-col1{
+width:50%;
+float:left;
+
+}
+.footer-col2{
+width:50%;
+float:right;
+}
+.footer-col3{
+width:50%;
+float:left;
+}
+.footer-col4{
+width:50%;
+float:right;
+}
+.footer-col-wrapper {
+width:100%;
+padding-left:10px;
+}
+.footer-col-wrapper p{
+padding-top:10px;
+width: 100%;
+}
+.footer-legals-wrapper {
+width: 100%;
+margin-left: 27px;
+margin-top: 18px;
+}
+.footer-legals {
+margin-top: 130px;
+margin-left: -24px;
+width: 100%;
+padding-left: 0px;
+clear: both;
+}
+.footer-legals p{
+font-size: 11px;
+line-height: 17px;
+padding: 0px;
+}
+.shortcode_messagebox {
+width: 430px;
+}
+h5{
+width: 221px;
+}
+.left-sidebar .left-sidebar-block {
+width: 100px;
+margin-top: -353px;
+}
+.left-sidebar .posts-block {
+float: left!important;
+}
+h5, h5 span, h5 a {
+font-size: 11px;
+}
+h1, h1 span, h1 a {
+font-size: 23px;
+line-height: 39px;
+}
+footer hr {
+width: 430px;
+}
+.banner, .bannercontainer {
+width:430px;
+}
+}
+@media only screen and (max-width : 320px) {
+.footer-col-wrapper {
+width: 100%;
+/*padding-left: 10px;*/
+}
 .strike_txt_sub {
 width: 200px;
 }
@@ -4030,8 +4160,9 @@ display:none;
 	font-size: 11px; 
 	color:#ec008c; 
 	line-height: 14px;
-	text-align: center;
+	text-align:left;
 	color:#FFF;
+	width: 35%;
 }
 .footer-col1{
 width:50%;
@@ -4052,16 +4183,13 @@ float:left;
 }
 .footer-col-wrapper p{
 padding-top:10px;
-padding-left:10px;
+padding-left:0px;
 }
 .ui-tabs-vertical .ui-tabs-nav li{
 width:100px;
 }
 .footer-legals{
-margin-top: 129px;
-margin-left: 174px;
-width: 135px;
-padding-left: 39px;
+padding-left:18px;
 }
 .footer-legals p{
 font-size: 11px;
@@ -4083,119 +4211,5 @@ width:287px;
 }
 .carouselslider ul li {
 padding: 0 0 0 124px!important;
-}
-}
-
-
-@media (max-width:568px) {
-
-header nav ul.menu > li {
-width: 78px;
-}
-.menu {
-height: 47px;
-}
-.footer-legals-wrapper {
-width: 27%;
-margin-left: -56px;
-}
-header .header_tools {
-display: inline-block;
-float: left;
-margin-left: 314px;
-}
-}
-
-@media (max-width:459px) {
-
-.container {
-width: auto;
-}
-
-.main_wrapper, .pre_footer {
-width: 439px!important;
-}
-
-header .logo img {
-width: 84px;
-}
-header .header_tools {
-display: inline-block;
-float: left;
-margin-left: 114px;
-}
-.strike_txt_sub {
-width: 368px;
-padding-left:-50px;
-}
-.right_box {
-width: 399px;
-}
-.footer-legals img{
-display:none;
-}
-.footer-col-wrapper p,.footer-col-wrapper div{ 
-	font-size: 11px; 
-	color:#ec008c; 
-	line-height: 14px;
-	text-align: center;
-	color:#FFF;
-}
-.footer-col1{
-width:50%;
-float:left;
-
-}
-.footer-col2{
-width:50%;
-float:right;
-}
-.footer-col3{
-width:50%;
-float:left;
-}
-.footer-col4{
-width:50%;
-float:right;
-}
-.footer-col-wrapper p{
-padding-top:10px;
-padding-left:10px;
-width: 100%;
-}
-.footer-legals-wrapper {
-width: 100%;
-margin-left: -61px;
-}
-.footer-legals{
-margin-top: 129px;
-margin-left: 174px;
-width: 100%;
-padding-left: 0px;
-}
-.footer-legals p{
-font-size: 11px;
-line-height: 17px;
-padding: 0px;
-}
-.shortcode_messagebox {
-width: 430px;
-}
-h5{
-width: 221px;
-}
-.left-sidebar .left-sidebar-block {
-width: 100px;
-margin-top: -353px;
-}
-.left-sidebar .posts-block {
-float: left!important;
-}
-h5, h5 span, h5 a {
-font-size: 11px;
-}
-h1, h1 span, h1 a {
-font-size: 23px;
-line-height: 39px;
 }
 }
