@@ -2240,6 +2240,9 @@ header nav ul.menu li {
 #social-float ul li#livechat a{background:url(../img/live-chart-icon.png) top left no-repeat;}
 }
 @media only screen and (min-width: 1200px) {
+.sidepanel select{
+display:none;
+}
 	.main_wrapper { 
 		width:1170px;
 	}
@@ -3175,9 +3178,9 @@ margin-bottom: 0px;
 	header .slogan {
 		display:none!important;
 	}
-	/*header nav { 
-		display:none!important;
-	}*/
+	header nav { 
+		display:none;
+	}
 
 	header .mobile_menu {
 		background:#2c2c2c url(../img/bg_pattern3.png) repeat;
@@ -3961,6 +3964,7 @@ color:#000;
 h1, h1 span, h1 a {
 font-size: 14px;
 line-height: 16px;
+padding-top:20px;
 }
 h5, h5 span, h5 a {
 font-size: 11px;
@@ -4008,5 +4012,22 @@ font-size:11px;
 line-height:0;
 padding:10px;
 }
-
+.ui-tabs-vertical .ui-tabs-panel{
+padding-left: 10px;
+margin-top:70px;
+}
+.sidepanel ul{
+display:none;
+}
+.sidepanel select{
+display:block;
+position:absolute;
+top:186px;
+width:287px;
+}
+.carouselslider ul li {
+padding: 0 0 0 124px!important;
+}
+}
+@media (max-width:460px) {
 }

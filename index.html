@@ -31,7 +31,8 @@
          
    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
         <script type="text/javascript" src="js/jquery.onebyone.min.js" ></script>
-        
+		
+        <script type="text/javascript" src="js/theme.js" ></script>
         <link rel="stylesheet" type="text/css" href="css/resets.css" media="screen" />
 
 
@@ -73,7 +74,21 @@ $( "#tabs li" ).removeClass( "ui-corner-top" ).addClass("ui-corner-left");
 		fullWidth:"off"	// Turns On or Off the Fullwidth Image Centering in FullWidth Modus
 	});
 
-	
+	//$("<select />").appendTo(".sidepanel");
+
+// Create default option "Go to..."
+
+// Populate dropdown with menu items
+$(".sidepanel a").each(function() {
+ var el = $(this);
+ $("<option />", {
+     "value"   : el.attr("href"),
+     "text"    : el.text()
+ }).appendTo(".sidepanel select");
+});
+$(".sidepanel select").change(function() {
+  window.location = $(this).click("option:selected").val();
+});
 }); 
 //alert(navigator.userAgent.toString().toLowerCase());
 </script>
@@ -391,8 +406,12 @@ $( "#tabs li" ).removeClass( "ui-corner-top" ).addClass("ui-corner-left");
 <li class="menu-item"><a href="#tabs-5">Support</a></li>
 <li class="menu-item"><a href="#tabs-6">Creativity</a></li>
 </ul>
+<select class="menu"> 
+   
+	 </select> 
                                     </div>
                                     </aside>
+									
                                     
         </div>         
         
