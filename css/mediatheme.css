@@ -4122,7 +4122,7 @@ width: 84px;
 header .header_tools {
 display: inline-block;
 float: left;
-margin-left: 206px;
+margin-left: 114px;
 }
 .strike_txt_sub {
 width: 368px;
@@ -4180,5 +4180,22 @@ padding: 0px;
 }
 .shortcode_messagebox {
 width: 430px;
+}
+h5{
+width: 221px;
+}
+.left-sidebar .left-sidebar-block {
+width: 100px;
+margin-top: -353px;
+}
+.left-sidebar .posts-block {
+float: left!important;
+}
+h5, h5 span, h5 a {
+font-size: 11px;
+}
+h1, h1 span, h1 a {
+font-size: 23px;
+line-height: 39px;
 }
 }
