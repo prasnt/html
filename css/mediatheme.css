@@ -3402,10 +3402,8 @@ margin-bottom: 0px;
                                                .footer-col1,
 											   .footer-col2,
 											   .footer-col3,
-											   .footer-col4{display:inline-block;float:left;width:70px;padding:40px 1px 20px 15px;}
-											 	.footer-col3{width:120px;}
-											 	.footer-col4{width:100px;}
-											   .footer-col-wrapper ul li a{font-size:12px;color:#fff;}
+											   .footer-col4{display:inline-block;float:left;width: 112px;padding:40px 1px 20px 15px;}
+											 	.footer-col-wrapper ul li a{font-size:12px;color:#fff;}
 											   .footer-col-wrapper p{ line-height: 15px;}
 											    .footer-col1 p,
 											   .footer-col2 p,
@@ -3962,7 +3960,70 @@ width: 400px;
 
 
 @media (max-width:568px) {
+.main_wrapper, .pre_footer {
+width: 553px!important;
+}
+.mobile_menu_wrapper {
+		display:block;
+		z-index:999;
+	}
+	#menu-nav {
+    display: table-cell;
+    vertical-align: bottom;
+    text-align: right;
+}
+#menu-button {
+    vertical-align: bottom;
+    float: left;
+    padding: .375em; /* 6/16 = .375em */
+    margin: 0 0 0 0; /* 6/16 = .375em, 32/16 = 2em */
+    opacity: 1;
+    cursor: pointer;
+     
+    transition: all .2s linear;
+    border-radius: 2px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+     
+    background-color: #2c2c2c;
+    background-image: linear-gradient(top,rgba(100, 152, 190, .5),rgba(30, 82, 120, .5));
+    background-position: left bottom;
+    background-repeat: repeat-x;
+}
+#menu-button.selected,
+#menu-button:active {
+    opacity: 1;
+     
+    box-shadow: 0 1px  1px rgba(120, 120, 120, .2);
+    background-color: #2c2c2c;
+    background-image: linear-gradient(top,rgba(25, 68, 99, .5),rgba(30, 82, 120, .5));
+     
+    margin-bottom: -.375em; /* 6/16 = .375em */
+}
+#menu-button-inner {
+    background: transparent url(../img/menu-bg.png) no-repeat 0 0;
+    width: 78px;
+    height: 41px;
+}
+.banner{
+display:none;
+}
+ #social-float{display:inline-block;width:270px;height:48px;float:left; z-index:22;position:absolute;top:0;left:30px}
+											   #social-float ul {display:inline-block;float:left;margin:0;padding:0;}
+#social-float ul li{display:inline-block;float:left;width:45px;height:48px;/*position: relative !important;*/margin:0 0 0 0!important}
+#social-float ul li a{display:inline-block;float:left;width:45px;height:48px;text-indent:-9999px; z-index:1;}
 
+
+#social-float ul li#facebook a{background:url(../img/facebook-icon.png) top left no-repeat; }
+#social-float ul li#twitter a{background:url(../img/twitter-icon.png) top left no-repeat;}
+#social-float ul li#linkedin a{background:url(../img/linkedin-icon.png) top left no-repeat; }
+#social-float ul li#mail a{background:url(../img/mail-icon.png) top left no-repeat; }
+#social-float ul li#livechat a{background:url(../img/live-chart-icon.png) top left no-repeat;}
+.bannercontainer{
+height:0px;
+}
+.header_wrapper nav{
+	display:none;
+	}
 header nav ul.menu > li {
 width: 78px;
 }
@@ -4123,23 +4184,7 @@ margin-top:0px;
 /*.bannercontainer {
 display:none;
 }*/
-.banner{
-display:none;
-}
- #social-float{display:inline-block;width:270px;height:48px;float:left; z-index:22;position:absolute;top:0;left:30px}
-											   #social-float ul {display:inline-block;float:left;margin:0;padding:0;}
-#social-float ul li{display:inline-block;float:left;width:45px;height:48px;/*position: relative !important;*/margin:0 0 0 0!important}
-#social-float ul li a{display:inline-block;float:left;width:45px;height:48px;text-indent:-9999px; z-index:1;}
 
-
-#social-float ul li#facebook a{background:url(../img/facebook-icon.png) top left no-repeat; }
-#social-float ul li#twitter a{background:url(../img/twitter-icon.png) top left no-repeat;}
-#social-float ul li#linkedin a{background:url(../img/linkedin-icon.png) top left no-repeat; }
-#social-float ul li#mail a{background:url(../img/mail-icon.png) top left no-repeat; }
-#social-float ul li#livechat a{background:url(../img/live-chart-icon.png) top left no-repeat;}
-.bannercontainer{
-height:0px;
-}
 .span9 {
 width: 300px;
 font:normal 12px/15px Arial;
@@ -4213,3 +4258,4 @@ width:287px;
 padding: 0 0 0 124px!important;
 }
 }
+

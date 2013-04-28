@@ -3130,7 +3130,7 @@ $(document).ready(function() {
 	});*/
 	
 	mainmenu_items = $('header').find('.menu').children('li').size();
-	$("#test).html(mainmenu_items);
+	//$("#test).html(mainmenu_items);
 	menu_item_size = Math.floor($('header').find('.menu').width()/mainmenu_items);
 	$('header').find('.menu').children('li').each(function(){		
 		if ($(this).children('a').attr('title')) {
@@ -3144,7 +3144,7 @@ $(document).ready(function() {
 		
 	//MobileMenu
 	$('.header_wrapper').append('<a href="javascript:void(0)" class="menu_toggler"/>');
-	$('header').append('<div class="mobile_menu_wrapper"><ul class="mobile_menu container"/></div>');	
+	$('header').append('<div class="mobile_menu_wrapper" id="menu-drink"><ul class="mobile_menu container"/></div>');	
 	$('.mobile_menu').html($('header').find('.menu').html());
 	$('.menu_toggler').live('click', function(){
 		$('.mobile_menu_wrapper').slideToggle(300);
