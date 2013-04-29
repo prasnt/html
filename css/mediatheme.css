@@ -3960,6 +3960,20 @@ width: 400px;
 
 
 @media (max-width:568px) {
+.ui-tabs-vertical .ui-tabs-panel {
+margin-top: 10px;
+padding-left: 185px;
+margin-bottom: 0px;
+}
+h5 {
+width: 339px;
+}
+.span9 {
+width: 533px;
+}
+.left-sidebar .left-sidebar-block {
+margin-top: -325px;
+}
 .main_wrapper, .pre_footer {
 width: 553px!important;
 }
@@ -3982,19 +3996,19 @@ width: 553px!important;
      
     transition: all .2s linear;
     border-radius: 2px;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+    /*box-shadow: 0 1px 1px rgba(0, 0, 0, .2);*/
      
     background-color: #2c2c2c;
     background-image: linear-gradient(top,rgba(100, 152, 190, .5),rgba(30, 82, 120, .5));
     background-position: left bottom;
     background-repeat: repeat-x;
-	margin-left:333px;
+	margin-left:442px;
 }
 #menu-button.selected,
 #menu-button:active {
     opacity: 1;
      
-    box-shadow: 0 1px  1px rgba(120, 120, 120, .2);
+/*    box-shadow: 0 1px  1px rgba(120, 120, 120, .2);*/
     background-color: #2c2c2c;
     background-image: linear-gradient(top,rgba(25, 68, 99, .5),rgba(30, 82, 120, .5));
      
@@ -4008,7 +4022,7 @@ width: 553px!important;
 .banner{
 display:none;
 }
- #social-float{display:inline-block;width:270px;height:48px;float:left; z-index:22;position:absolute;top:0px;left:30px}
+ #social-float{display:inline-block;width:270px;height:48px;float:left; z-index:22;position:absolute;top:0px;left:5px}
 											   #social-float ul {display:inline-block;float:left;margin:0;padding:0;}
 #social-float ul li{display:inline-block;float:left;width:45px;height:48px;/*position: relative !important;*/margin:0 0 0 0!important}
 #social-float ul li a{display:inline-block;float:left;width:45px;height:48px;text-indent:-9999px; z-index:1;}
